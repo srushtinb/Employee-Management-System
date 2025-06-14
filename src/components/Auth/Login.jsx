@@ -8,7 +8,7 @@ const Login = ({handleLogin}) => {
     const [password, setPassword] = useState('')
 
 
-    const submitHandler = (e)=>{  //two-way binding
+    const submitHandler = (e)=>{
         e.preventDefault()
         handleLogin(email,password)
         setEmail("")
@@ -22,10 +22,8 @@ const Login = ({handleLogin}) => {
             <form 
             onSubmit={(e)=>{
                 submitHandler(e)
-              
             }}
             className='flex flex-col items-center justify-center'
-            autoComplete="off"
             >
                 <input 
                 value={email}

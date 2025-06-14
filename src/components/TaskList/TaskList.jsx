@@ -9,7 +9,7 @@ const TaskList = () => {
             <h4>20 FEB 2025</h4>
             </div>
             <h2 className='mt-5 text-2xl font-semibold'>Make a Notes of it</h2>
-            <p className='text-sm mt-2'>
+            <p className='text-sm mt-2  overflow-auto'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias veniam rerum ullam labore, tenetur facilis adipisci cum maxime voluptas reprehenderit ipsum fuga repellat amet debitis eaque quos, minima sapiente?</p>
         </div>
         <div className='flex-shrink-0 h-full w-[300px] p-5 bg-green-400 rounded-xl'>
@@ -18,7 +18,7 @@ const TaskList = () => {
             <h4>20 FEB 2025</h4>
             </div>
             <h2 className='mt-5 text-2xl font-semibold'>Make a Notes of it</h2>
-            <p className='text-sm mt-2'>
+            <p className='text-sm mt-2 overflow-auto'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias veniam rerum ullam labore, tenetur facilis adipisci cum maxime voluptas reprehenderit ipsum fuga repellat amet debitis eaque quos, minima sapiente?</p>
         </div>
         <div className='flex-shrink-0 h-full w-[300px] p-5 bg-blue-400 rounded-xl'>
@@ -27,7 +27,7 @@ const TaskList = () => {
             <h4>20 FEB 2025</h4>
             </div>
             <h2 className='mt-5 text-2xl font-semibold'>Make a Notes of it</h2>
-            <p className='text-sm mt-2'>
+            <p className='text-sm mt-2 overflow-auto'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias veniam rerum ullam labore, tenetur facilis adipisci cum maxime voluptas reprehenderit ipsum fuga repellat amet debitis eaque quos, minima sapiente?</p>
         </div>
         <div className='flex-shrink-0 h-full w-[300px] p-5 bg-yellow-400 rounded-xl'>
@@ -36,7 +36,7 @@ const TaskList = () => {
             <h4>20 FEB 2025</h4>
             </div>
             <h2 className='mt-5 text-2xl font-semibold'>Make a Notes of it</h2>
-            <p className='text-sm mt-2'>
+            <p className='text-sm mt-2 overflow-auto'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias veniam rerum ullam labore, tenetur facilis adipisci cum maxime voluptas reprehenderit ipsum fuga repellat amet debitis eaque quos, minima sapiente?</p>
         </div>
         <div className='flex-shrink-0 h-full w-[300px] p-5 bg-red-400 rounded-xl'>
@@ -45,7 +45,7 @@ const TaskList = () => {
             <h4>20 FEB 2025</h4>
             </div>
             <h2 className='mt-5 text-2xl font-semibold'>Make a Notes of it</h2>
-            <p className='text-sm mt-2'>
+            <p className='text-sm mt-2 overflow-auto'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias veniam rerum ullam labore, tenetur facilis adipisci cum maxime voluptas reprehenderit ipsum fuga repellat amet debitis eaque quos, minima sapiente?</p>
         </div>
         
