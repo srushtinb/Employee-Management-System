@@ -59,8 +59,14 @@ Visit → http://localhost:5173/
 
 
 👩‍💻 Author
+---
 
-![Srushti N B](https://github.com/srushtinb)
+## 👩‍💻 Author
+
+
+[**Srushti N B** ](https://github.com/srushtinb)  
+[Project Repository](https://github.com/srushtinb/Employee-Management-System)
+
 
 
 
