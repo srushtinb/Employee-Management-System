@@ -39,7 +39,6 @@ https://employee-management-system-ten-olive.vercel.app/
 
 ## 🚀 Installation & Running Locally
 
-```bash
 git clone https://github.com/srushtinb/Employee-Management-System.git
 cd Employee-Management-System
 npm install
@@ -56,10 +55,19 @@ Visit → http://localhost:5173/
     🔔 Notifications for Employees
 
     👥 Role-based Permissions (Admin/Employee)
-----
-## 📚 Author
 
-[Srushti N B](https://github.com/srushtinb)
+---
+
+## 👩‍💻 Author
+
+[**Srushti N B**](https://github.com/srushtinb)  
+📁 [Project Repository](https://github.com/srushtinb/Employee-Management-System)
+
+
+
+
+
+
 
 
 
