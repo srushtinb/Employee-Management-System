@@ -35,7 +35,7 @@ const ManageEmployees = () => {
     return (
         <div className="p-7">
             <Header />
-            <h2 className="text-xl font-bold mb-3">Manage Employees</h2>
+            <h2 className="text-xl font-bold mb-3 mt-10">Manage Employees</h2>
 
             <div className='flex gap-2 mb-4'>
                 <input

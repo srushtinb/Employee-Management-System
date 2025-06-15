@@ -1,35 +1,61 @@
-import React, { useContext } from 'react'
-import { AuthContext } from '../../context/AuthProvider'
+import React, { useContext, useEffect } from 'react';
+import { AuthContext } from '../../context/AuthProvider';
+import AcceptTask from '../TaskList/AcceptTask';
 
 const AllTask = () => {
+  const [userData, setUserData] = useContext(AuthContext);
 
-   const [userData,setUserData] =  useContext(AuthContext)
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem('employees'));
+    if (stored) setUserData(stored);
+  }, []);
 
-   
+  const handleStatusChange = (employeeId, taskId, newStatus) => {
+    const updatedUsers = userData.map(user => {
+      if (user.id === employeeId) {
+        const updatedTasks = user.tasks.map(task =>
+          task.id === taskId ? { ...task, status: newStatus } : task
+        );
+
+        const taskCounts = {
+          newTask: updatedTasks.filter(t => !t.status || t.status === 'new').length,
+          active: updatedTasks.filter(t => t.status === 'active').length,
+          completed: updatedTasks.filter(t => t.status === 'completed').length,
+          failed: updatedTasks.filter(t => t.status === 'failed').length,
+        };
+
+        return { ...user, tasks: updatedTasks, taskCounts };
+      }
+      return user;
+    });
+
+    setUserData(updatedUsers);
+    localStorage.setItem('employees', JSON.stringify(updatedUsers));
+  };
+
   return (
     <div className='bg-[#1c1c1c] p-5 rounded mt-5'>
-        <div className='bg-red-400 mb-2 py-2 px-4 flex justify-between rounded'>
-            <h2 className='text-lg font-medium w-1/5'>Employee Name</h2>
-            <h3 className='text-lg font-medium w-1/5'>New Task</h3>
-            <h5 className='text-lg font-medium w-1/5'>Active Task</h5>
-            <h5 className='text-lg font-medium w-1/5'>Completed</h5>
-            <h5 className='text-lg font-medium w-1/5'>Failed</h5>
+      {userData.map(user => (
+        <div key={user.id} className='mb-6'>
+          <h2 className='text-xl font-semibold text-white mb-3'>{user.firstName}'s Tasks</h2>
+          <div className='flex gap-4 flex-wrap'>
+            {user.tasks && user.tasks.length > 0 ? (
+              user.tasks.map(task => (
+                <AcceptTask
+                  key={task.id}
+                  data={task}
+                  employeeId={user.id}
+                  onStatusChange={handleStatusChange}
+                />
+              ))
+            ) : (
+              <p className='text-gray-400'>No tasks assigned yet.</p>
+            )}
+          </div>
         </div>
-        <div className=''>
-        {userData.map(function(elem,idx){
-            return <div key={idx} className='border-2 border-emerald-500 mb-2 py-2 px-4 flex justify-between rounded'>
-            <h2 className='text-lg font-medium  w-1/5'>{elem.firstName}</h2>
-            <h3 className='text-lg font-medium w-1/5 text-blue-400'>{elem.taskCounts.newTask}</h3>
-            <h5 className='text-lg font-medium w-1/5 text-yellow-400'>{elem.taskCounts.active}</h5>
-            <h5 className='text-lg font-medium w-1/5 text-white'>{elem.taskCounts.completed}</h5>
-            <h5 className='text-lg font-medium w-1/5 text-red-600'>{elem.taskCounts.failed}</h5>
-        </div>
-        })}
-        </div>
-        
-        
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default AllTask
+export default AllTask;
