@@ -56,7 +56,7 @@ Visit → http://localhost:5173/
     🔔 Notifications for Employees
 
     👥 Role-based Permissions (Admin/Employee)
-
+----
 ## 📚 Author
 
 [Srushti N B](https://github.com/srushtinb)
