@@ -3,7 +3,7 @@
 An **Employee Management System** built with **React** for managing employees and their assigned tasks. It includes features for adding, deleting employees, and managing tasks (New, Completed, Failed) with **local storage** persistence.
 
 🔗 **Live Demo:**  
-https://employee-management-system-ten-olive.vercel.app/ 
+https://employee-management-system-ten-olive.vercel.app/
 
 ---
 
@@ -29,9 +29,11 @@ https://employee-management-system-ten-olive.vercel.app/
 
 ## 📸 Screenshots
 
-| Admin Dashboard | Employee Dashboard |
-| --------------- | ------------------ |
-| https://github.com/srushtinb/Employee-Management-System/blob/main/screenshots/AdminDashboard.png |  https://github.com/srushtinb/Employee-Management-System/blob/main/screenshots/EmployeeDashboard.png |
+### Admin Dashboard
+![Admin Dashboard](https://github.com/srushtinb/Employee-Management-System/blob/main/screenshots/AdminDashboard.png?raw=true)
+
+### Employee Dashboard
+![Employee Dashboard](https://github.com/srushtinb/Employee-Management-System/blob/main/screenshots/EmployeeDashboard.png?raw=true)
 
 ---
 
@@ -43,10 +45,7 @@ cd Employee-Management-System
 npm install
 npm run dev
 
-
 Visit → http://localhost:5173/
-
-
 
 ✅ To-Do (Future Enhancements)
 
@@ -58,9 +57,10 @@ Visit → http://localhost:5173/
 
     👥 Role-based Permissions (Admin/Employee)
 
+
 👩‍💻 Author
 
 Srushti N B
-https://github.com/srushtinb
+GitHub Profile
 
 
