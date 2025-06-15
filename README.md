@@ -57,11 +57,9 @@ Visit → http://localhost:5173/
 
     👥 Role-based Permissions (Admin/Employee)
 
+## 👩‍💻 Author
 
-👩‍💻## 👩‍💻 Author
-
-**Srushti N B**  
-🔗 [GitHub Profile](https://github.com/srushtinb)  
+[**Srushti N B**](https://github.com/srushtinb)  
 📁 [Project Repository](https://github.com/srushtinb/Employee-Management-System)
 
 
