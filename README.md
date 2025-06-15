@@ -59,9 +59,6 @@ Visit → http://localhost:5173/
 
 
 👩‍💻 Author
----
-
-
 
 
 [**Srushti N B** ](https://github.com/srushtinb)  
