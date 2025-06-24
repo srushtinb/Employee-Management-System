@@ -4,7 +4,10 @@ An **Employee Management System** built with **React** for managing employees an
 
 🔗 **Live Demo:**  
 https://employee-management-system-ten-olive.vercel.app/
-
+Login emails:
+admin:admin@megmail.com
+employee:e@e.com(1 employee example)
+passowrd:123
 ---
 
 ## 📂 Features
